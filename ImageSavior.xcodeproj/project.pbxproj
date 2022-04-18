@@ -12,6 +12,8 @@
 		6302690427672361003841EF /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6302690327672361003841EF /* LogInViewController.swift */; };
 		6349FF34275A46B8006A6082 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6349FF33275A46B8006A6082 /* TableViewCell.swift */; };
 		636C1A69277705B400D47D47 /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636C1A68277705B400D47D47 /* KeyChain.swift */; };
+		63A79B1D280D53F4007330FF /* LocalAuthorizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A79B1C280D53F4007330FF /* LocalAuthorizationService.swift */; };
+		63A79B1F280D56BF007330FF /* LogInWithFaceOrTochIDController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A79B1E280D56BF007330FF /* LogInWithFaceOrTochIDController.swift */; };
 		63CBBF692768915200A6F5AD /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBBF682768915200A6F5AD /* LogInView.swift */; };
 		63CC9A4F275A21AF0094EE24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CC9A4E275A21AF0094EE24 /* AppDelegate.swift */; };
 		63CC9A51275A21AF0094EE24 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CC9A50275A21AF0094EE24 /* SceneDelegate.swift */; };
@@ -31,6 +33,8 @@
 		6302690327672361003841EF /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		6349FF33275A46B8006A6082 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		636C1A68277705B400D47D47 /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
+		63A79B1C280D53F4007330FF /* LocalAuthorizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthorizationService.swift; sourceTree = "<group>"; };
+		63A79B1E280D56BF007330FF /* LogInWithFaceOrTochIDController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInWithFaceOrTochIDController.swift; sourceTree = "<group>"; };
 		63CBBF682768915200A6F5AD /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		63CC9A4B275A21AF0094EE24 /* ImageSavior.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageSavior.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63CC9A4E275A21AF0094EE24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +69,7 @@
 				6302690127672321003841EF /* SettingsViewController.swift */,
 				6302690327672361003841EF /* LogInViewController.swift */,
 				63F066682778457C00AC8B81 /* ChangePasswordViewController.swift */,
+				63A79B1E280D56BF007330FF /* LogInWithFaceOrTochIDController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -116,6 +121,7 @@
 				63F066662778452B00AC8B81 /* AppSettins.swift */,
 				63CF8349277459BD006B99D0 /* LoginStagesEnum.swift */,
 				636C1A68277705B400D47D47 /* KeyChain.swift */,
+				63A79B1C280D53F4007330FF /* LocalAuthorizationService.swift */,
 			);
 			path = "Logic Stuff ";
 			sourceTree = "<group>";
@@ -199,6 +205,7 @@
 				636C1A69277705B400D47D47 /* KeyChain.swift in Sources */,
 				63CF8348277457FB006B99D0 /* PasswordCreator.swift in Sources */,
 				6349FF34275A46B8006A6082 /* TableViewCell.swift in Sources */,
+				63A79B1F280D56BF007330FF /* LogInWithFaceOrTochIDController.swift in Sources */,
 				63CC9A4F275A21AF0094EE24 /* AppDelegate.swift in Sources */,
 				63F066672778452B00AC8B81 /* AppSettins.swift in Sources */,
 				6302690427672361003841EF /* LogInViewController.swift in Sources */,
@@ -207,6 +214,7 @@
 				63CBBF692768915200A6F5AD /* LogInView.swift in Sources */,
 				63F0666527783E1C00AC8B81 /* SettingsView.swift in Sources */,
 				63CC9A51275A21AF0094EE24 /* SceneDelegate.swift in Sources */,
+				63A79B1D280D53F4007330FF /* LocalAuthorizationService.swift in Sources */,
 				6302690227672321003841EF /* SettingsViewController.swift in Sources */,
 				63F066692778457C00AC8B81 /* ChangePasswordViewController.swift in Sources */,
 			);
@@ -340,6 +348,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ImageSavior/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Get access to further content";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -366,6 +375,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ImageSavior/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Get access to further content";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
