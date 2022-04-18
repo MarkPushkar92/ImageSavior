@@ -25,8 +25,7 @@ class PasswordCreator {
         return false
     }
     
-    func reset()
-    {
+    func reset() {
         self.password = nil
     }
 }
